@@ -35,7 +35,7 @@ img { max-width: 100%; display: block; }
 .desktop-nav a:hover::after { right: 0; }
 .mobile-menu { display: none; }
 
-.hero { min-height: calc(100svh - 92px); position: relative; display: grid; align-items: center; overflow: hidden; background-image: linear-gradient(90deg, rgba(8, 10, 7, .92) 0%, rgba(8, 10, 7, .58) 31%, rgba(8, 10, 7, .08) 62%), url('/images/hero-magnolia.jpg'); background-position: center; background-size: cover; }
+.hero { min-height: calc(100svh - 92px); position: relative; display: grid; align-items: center; overflow: hidden; background-image: linear-gradient(90deg, rgba(8, 10, 7, .92) 0%, rgba(8, 10, 7, .58) 31%, rgba(8, 10, 7, .08) 62%), url('/images/creations/fenetre\ végétale.jpg'); background-position: center; background-size: cover; }
 .hero::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(0,0,0,.22), transparent 30%); }
 .hero-copy { width: min(560px, 85vw); margin-left: clamp(28px, 7vw, 110px); color: #fff; padding: 70px 0; position: relative; z-index: 1; }
 .hero-kicker { margin: 0 0 32px; font-size: 9px; font-weight: 600; letter-spacing: .23em; text-transform: uppercase; opacity: .76; }
@@ -133,7 +133,7 @@ img { max-width: 100%; display: block; }
 .process-list article span { padding-top: 5px; color: #77786e; font-size: 9px; letter-spacing: .15em; }
 .process-list article h3 { margin: 0; font: 400 30px/1.2 var(--serif); }
 .process-list article p { max-width: 420px; margin: 0; color: #5b5c54; font: 15px/1.65 var(--serif); }
-.material-quote { min-height: 580px; display: grid; place-items: center; padding: 80px 24px; color: white; text-align: center; background: linear-gradient(rgba(10,12,8,.42), rgba(10,12,8,.42)), url('/images/hero-magnolia.jpg') center/cover; background-attachment: fixed; }
+.material-quote { min-height: 580px; display: grid; place-items: center; padding: 80px 24px; color: white; text-align: center; background: linear-gradient(rgba(10,12,8,.42), rgba(10,12,8,.42)), url('/images/creations/fenetre\ végétale.jpg') center/cover; background-attachment: fixed; }
 .material-quote p { margin: 0; font: 400 clamp(47px, 7vw, 100px)/1.03 var(--serif); letter-spacing: -.035em; }
 
 .commission-hero { min-height: calc(100svh - 92px); display: grid; grid-template-columns: 1fr .82fr; }
@@ -224,7 +224,7 @@ img { max-width: 100%; display: block; }
   .mobile-menu nav { position: absolute; top: 78px; left: 0; right: 0; min-height: calc(100svh - 78px); display: flex; flex-direction: column; padding: 35px 24px 60px; background: var(--paper); }
   .mobile-menu nav a { display: flex; align-items: baseline; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font: 400 40px/1 var(--serif); }
   .mobile-menu nav small { width: 24px; font: 8px/1 var(--sans); letter-spacing: .12em; }
-  .hero { min-height: calc(100svh - 78px); background-image: linear-gradient(90deg, rgba(8,10,7,.81), rgba(8,10,7,.12)), url('/images/hero-magnolia.jpg'); background-position: 58% center; }
+  .hero { min-height: calc(100svh - 78px); background-image: linear-gradient(90deg, rgba(8,10,7,.81), rgba(8,10,7,.12)), url('/images/creations/fenetre\ végétale.jpg'); background-position: 58% center; }
   .hero-copy { align-self: end; width: calc(100% - 48px); margin-left: 24px; padding: 70px 0 55px; }
   .hero h1 { font-size: clamp(65px, 22vw, 94px); }
   .hero-note { margin-top: 32px; font-size: 9px; }
