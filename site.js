@@ -50,15 +50,16 @@
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       const data = new FormData(form);
-      const name = data.get("name") || "";
-      const email = data.get("email") || "";
-      const project = data.get("project") || "";
-      const message = data.get("message") || "";
-      const subject = encodeURIComponent(`Demande adressée à l’atelier par ${name}`);
-      const body = encodeURIComponent(`Nom : ${name}\nE-mail : ${email}\nType de projet : ${project}\n\n${message}`);
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const objet = String(data.get("objet") || "").trim();
+      const message = String(data.get("message") || "").trim();
+      const recipient = form.dataset.recipient || "luniverredecaro@gmail.com";
+      const subject = encodeURIComponent(objet);
+      const body = encodeURIComponent(`Bonjour,\n\n${message}\n\nNom : ${name}\nE-mail : ${email}`);
       const status = document.querySelector("[data-form-status]");
       if (status) status.textContent = "Votre application de messagerie devrait s’ouvrir avec un message préparé.";
-      window.location.href = `mailto:studio@elenamorgan.glass?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
     });
   }
 })();
