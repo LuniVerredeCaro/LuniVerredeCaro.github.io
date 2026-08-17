@@ -20,6 +20,8 @@
 .static-current::after { right: 0 !important; }
 .static-gallery [hidden] { display: none !important; }
 .static-gallery article.project-card { cursor: default; }
+.static-gallery .gallery-grid .project-image-wrap { aspect-ratio: auto; }
+.static-gallery .gallery-grid .project-image-wrap img { height: auto; object-fit: contain; }
 .static-project-button { width: 100%; }
 .static-lightbox[hidden] { display: none; }
 .static-lightbox .lightbox-copy { align-self: center; }
