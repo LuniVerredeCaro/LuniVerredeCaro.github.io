@@ -1,0 +1,27 @@
+@import url("./app/globals.css");
+
+/* File-preview paths: these override web-root image URLs when index.html is
+   opened directly from Finder. Keep replacement images in public/images/. */
+.hero {
+  background-image: linear-gradient(90deg, rgba(8, 10, 7, .92) 0%, rgba(8, 10, 7, .58) 31%, rgba(8, 10, 7, .08) 62%), url('./public/images/hero-magnolia.jpg');
+}
+
+.material-quote {
+  background-image: linear-gradient(rgba(10,12,8,.42), rgba(10,12,8,.42)), url('./public/images/hero-magnolia.jpg');
+}
+
+@media (max-width: 760px) {
+  .hero {
+    background-image: linear-gradient(90deg, rgba(8,10,7,.81), rgba(8,10,7,.12)), url('./public/images/hero-magnolia.jpg');
+  }
+}
+
+/* Enhancements used by the no-build HTML version. */
+.static-current::after { right: 0 !important; }
+.static-gallery [hidden] { display: none !important; }
+.static-project-button { width: 100%; }
+.static-lightbox[hidden] { display: none; }
+.static-lightbox .lightbox-copy { align-self: center; }
+.static-lightbox .lightbox-media img { width: 100%; }
+.static-lightbox .lightbox-copy dl { margin-bottom: 0; }
+.static-contact-status { min-height: 1.5em; }
